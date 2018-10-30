@@ -1,0 +1,146 @@
+<head>
+   <style>
+
+      .button {
+      background-color:rgb(129, 129, 129); /* Blue */
+      border: groove;
+      color:white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      }
+
+      .button-2 {
+      background-color: rgb(236, 154, 60); /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      }
+
+      div.card {
+      width: 250px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+      margin: 12px 2px;
+      display: inline-block;
+      }
+
+      div.header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      font-size: 40px;
+      }
+
+      div.container {
+      padding: 10px;
+      }
+
+   </style>
+</head>
+
+<br>
+<div style="text-align:center">
+<div style="font-family:Arial, Helvetica, sans-serif">
+<div p style="color:white">
+<div style="font-size: large">
+<div style="font-weight:bold">
+<p>Click the button below to generate a Mutltiple-Choice Question with random Difficulty and Category:</p>
+<button class="button-2" (click)="onTestGet()">? ? ? ?</button>
+<br>
+<div style="font-family:'Times New Roman', Times, serif">
+   <div style="font-style:italic">
+      <h3>Question:</h3>
+   </div>
+   <div [innerHTML]="getQuestion"></div>
+</div>
+<button class ="button" (click)="onAnswerclick('1')">
+   <div [innerHTML]="Spot1"></div>
+   A 
+</button>
+<button class ="button" (click)="onAnswerclick('2')">
+   <div [innerHTML]="Spot2"></div>
+   B 
+</button>
+<button class ="button" (click)="onAnswerclick('3')">
+   <div [innerHTML]="Spot3"></div>
+   C 
+</button>
+<button class ="button" (click)="onAnswerclick('4')">
+   <div [innerHTML]="Spot4"></div>
+   D 
+</button>
+<br>
+<br>    
+<div style="font-style:italic;" [innerHTML]="showAnswer"></div>
+<br>
+<br>
+
+<head>
+   <style>
+
+      .button {
+      background-color:rgb(129, 129, 129); /* Blue */
+      border: groove;
+      color:white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      }
+
+      .button-2 {
+      background-color: rgb(236, 154, 60); /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      }
+
+      div.card {
+      width: 250px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+      margin: 12px 2px;
+      display: inline-block;
+      }
+
+      div.header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      font-size: 40px;
+      }
+
+      div.container {
+      padding: 10px;
+      }
+      
+   </style>
+</head>
